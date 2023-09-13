@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "breakout-schedule"
+version = "0.1.0"
+description = "Schedule breakout sessions based on individual preferences"
+authors = ["Dan Hewitt <danh@graphcore.ai>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "breakout_schedule"}]
+
+[tool.poetry.dependencies]
+python = "~3.8"
+pandas = "^2.0.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
